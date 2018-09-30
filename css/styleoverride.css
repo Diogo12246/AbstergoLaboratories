@@ -62,21 +62,21 @@ html,body {
     max-width: 500px;
 }
 
-.card{
-    background-color: #343A40;
-    border-radius: 0;
-}
-
-.card-header{
-    color: white;    
-}
-
 .abstergoText{
     color: white;
     margin-bottom: 2%;
     margin-top: 1%;
     justify-content:center;
     font-family: ABSTERGO;
+}
+
+#footer{
+    background-color: #343A40;
+    height: 60px;
+    text-align: center;
+    color: white;
+    font-family: ABSTERGO;
+    line-height: 60px;
 }
 
 
@@ -99,65 +99,82 @@ html,body {
         max-width: 300px;
         min-width: 90px;
     }
-
+    #footer {
+        line-height: 60px;
+    }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 600px) {  
-    .abstergoText{
-        font-size: 30px;
-    }
-    .logoJumbotron{
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 40px rgb(0, 162, 255));
-        animation: glow 10s ease infinite forwards;
-        max-width: 350px;
-        max-height: 350px;
-        padding-top: 150px;
-        padding-left: 0px;
-    }
-    .searchbarFORM{
-        max-width: 350px;
-        min-width: 100px;
-    }
-
+@media only screen and (min-device-width: 480px) 
+                   and (max-device-width: 640px) 
+                   and (orientation: landscape) {
+                    .abstergoText{
+                        font-size: 30px;
+                    }
+                    .logoJumbotron{
+                        border-radius: 20px;
+                        filter: drop-shadow(0px 0px 40px rgb(0, 162, 255));
+                        animation: glow 10s ease infinite forwards;
+                        max-width: 250px;
+                        max-height: 250px;
+                        padding-top: 100px;
+                        padding-left: 0px;
+                    }
+                    .searchbarFORM{
+                        max-width: 400px;
+                        min-width: 120px;
+                        padding-bottom: 10%;
+                    }
+                    #footer{
+                            line-height: 60px;
+                    }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {  
-    .abstergoText{
-        font-size: 50px;
-    }
-    .logoJumbotron{
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 40px rgb(0, 162, 255));
-        animation: glow 10s ease infinite forwards;
-        max-width: 550px;
-        max-height: 550px;
-        padding-top: 100px;
-        padding-left: 0px;
-    }
-    .searchbarFORM{
-        max-width: 350px;
-        min-width: 100px;
-    }
-
+@media only screen and (min-device-width: 640px) 
+                   and (max-device-width: 1024px) 
+                   and (orientation: landscape) {
+                    .abstergoText{
+                        font-size: 30px;
+                    }
+                    .logoJumbotron{
+                        border-radius: 20px;
+                        filter: drop-shadow(0px 0px 40px rgb(0, 162, 255));
+                        animation: glow 10s ease infinite forwards;
+                        max-width: 250px;
+                        max-height: 250px;
+                        padding-top: 100px;
+                        padding-left: 0px;
+                    }
+                    .searchbarFORM{
+                        max-width: 400px;
+                        min-width: 120px;
+                    }
+                    #footer{
+                            line-height: 60px;
+                    }
 }
 
-@media only screen and (min-width: 2560px) {  
-    .abstergoText{
-        font-size: 150px;
-    }
-    .logoJumbotron{
-        border-radius: 20px;
-        filter: drop-shadow(0px 0px 40px rgb(0, 162, 255));
-        animation: glow 10s ease infinite forwards;
-        max-width: 1500px;
-        max-height: 1500px;
-        padding-top: 500px;
-        padding-left: 0px;
-    }
-    .searchbarFORM{
-        max-width: 900px;
-        min-width: 500px;
-    }
-
+@media only screen and (min-device-width: 520px) 
+                   and (max-device-width: 568px) 
+                   and (orientation: landscape) {
+                    .abstergoText{
+                        font-size: 30px;
+                    }
+                    .logoJumbotron{
+                        border-radius: 20px;
+                        filter: drop-shadow(0px 0px 40px rgb(0, 162, 255));
+                        animation: glow 10s ease infinite forwards;
+                        max-width: 150px;
+                        max-height: 150px;
+                        padding-top: 50px;
+                        padding-left: 0px;
+                    }
+                    .searchbarFORM{
+                        max-width: 500px;
+                        min-width: 150px;
+                        padding: 0 0 0 0;
+                    }
+                    #footer{
+                        line-height: 60px;
+                        width: 100%;
+                    }
 }
